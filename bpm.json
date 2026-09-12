@@ -1,0 +1,20 @@
+{
+  "name": "world-model-learner",
+  "version": "0.1.0",
+  "type": "extension",
+  "description": "Background daemon that trains any world model from real agent threads. 7-stage pipeline: scan finished threads, route to candidate files, extract learnings, filter, patch, filter, open PR. Supports Amp, Claude, and Codex thread transcripts.",
+  "entry": "SKILL.md",
+  "scope": "global",
+  "token_cost": 900,
+  "keywords": ["world-model", "learner", "auto-training", "background-daemon", "knowledge-extraction"],
+  "author": {
+    "name": "Dakota Fabro",
+    "github": "dakotafabro"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/dakotafabro/world-model-learner",
+  "agents": ["goose", "claude-code", "codex", "cursor"],
+  "dependencies": ["world-model"],
+  "conflicts": [],
+  "peers": ["translator"]
+}
